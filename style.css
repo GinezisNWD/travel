@@ -99,10 +99,10 @@ body {
 }
 .first {
   height: 765px;
-  /* background: url(/assets/img/background1.jpg); */
+  /* background: url(assets/img/background1.jpg); */
 }
 .first-section-backgroun-wrapper {
-  background: url(/assets/img/background1.jpg);
+  background: url(assets/img/background1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -264,13 +264,13 @@ body {
   border-radius: 16px;
 }
 .Omsk-Russia {
-  background: url(/assets/img/Spain.jpg);
+  background: url(assets/img/Spain.jpg);
 }
 .Japan {
-  background: url(/assets/img/Japan.jpg);
+  background: url(assets/img/Japan.jpg);
 }
 .USA {
-  background: url(/assets/img/USA.jpg);
+  background: url(assets/img/USA.jpg);
 }
 .stories-block {
   display: flex;
@@ -301,7 +301,7 @@ body {
   color: #0d606f;
 }
 .second-section-backgroun-wrapper {
-  background: url(/assets/img/background2.jpg);
+  background: url(assets/img/background2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-size: 100%;
