@@ -7,80 +7,203 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="container">
-        <nav class="nav">
-          <ul class="nav-list">
-            <li class="nav-item">
-              <a href="#1" class="nav-link">How It Works</a>
-            </li>
-            <li class="nav-item">
-              <a href="#2" class="nav-link">Plan Your Trip</a>
-            </li>
-            <li class="nav-item">
-              <a href="#3" class="nav-link">Destinations</a>
-            </li>
-            <li class="nav-item">
-              <a href="#4" class="nav-link">Travel Stories</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    <div class="first-section-backgroun-wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="menu-wrapper">
+            <div class="logo-wrapper">
+              <img class="main-logo" src="/assets/img/main_logo.svg" alt="" />
+              <p class="main-logo-text">Travel Portal</p>
+            </div>
+            <div class="nav-wrapper">
+              <nav class="nav">
+                <ul class="nav-list">
+                  <li class="nav-item">
+                    <a href="#1" class="nav-link">How It Works</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#2" class="nav-link">Plan Your Trip</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#3" class="nav-link">Destinations</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#4" class="nav-link">Travel Stories</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="login-wrapper">
+              <button class="button-frame1 login-button-text">Login</button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="section first" id="1">
+        <div class="container">
+          <div class="content-wrapper">
+            <h1 class="main-section-title">Explore the beauty of the World</h1>
+            <p class="main-section-title-p1">
+              Receive personalized recommendations for countries, hotels,
+              activities and more
+            </p>
+            <div class="planing-box">
+              <p class="main-section-title-p2">What would you like to do?</p>
+              <button class="button-frame2 button-text">Start Planning</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
     <main class="main">
-      <div class="container">
-        <section class="section first" id="1">
-          <h1 class="main-section-title">Explore the beauty of the World</h1>
-          <p class="main-section-title-p1">
-            Receive personalized recommendations for countries, hotels,
-            activities and more
-          </p>
-          <div class="planing-box">
-            <p class="main-section-title-p2">What would you like to do?</p>
-            <button class="button-frame2 button-text">Start Planning</button>
-          </div>
-        </section>
-        <section class="section" id="2">
-          <h2 class="section-title">3 STEPS TO THE PERFECT TRIP</h2>
-          <div class="box-for-icons">
-            <div class="icon-frame">
-              <img
-                class="icon"
-                src="/assets/img/airplane.svg"
-                alt="airplane icon"
-              />
+      <section class="section" id="2">
+        <h2 class="section-title">3 STEPS TO THE PERFECT TRIP</h2>
+        <div class="container">
+          <div class="steps-item-wrapper">
+            <div class="steps-item">
+              <div class="box-for-icons">
+                <div class="icon-frame">
+                  <img
+                    class="icon"
+                    src="/assets/img/airplane.svg"
+                    alt="airplane icon"
+                  />
+                </div>
+                <p class="text-for-icons">Tell us what you want to do</p>
+              </div>
+            </div>
+            <div class="steps-item">
+              <div class="box-for-icons">
+                <div class="icon-frame">
+                  <img
+                    class="icon"
+                    src="/assets/img/calendar.svg"
+                    alt="calendar icon"
+                  />
+                </div>
+                <p class="text-for-icons">Share us preferable dates</p>
+              </div>
+            </div>
+            <div class="steps-item">
+              <div class="box-for-icons">
+                <div class="icon-frame">
+                  <img
+                    class="icon"
+                    src="/assets/img/airplane.svg"
+                    alt="airplane icon"
+                  />
+                </div>
+                <p class="text-for-icons">We will give you recommendations</p>
+              </div>
             </div>
           </div>
-          <div class="box-for-icons">
-            <div class="icon-frame">
-              <img
-                class="icon"
-                src="/assets/img/calendar.svg"
-                alt="calendar icon"
-              />
-            </div>
-          </div>
-          <div class="box-for-icons">
-            <div class="icon-frame">
-              <img
-                class="icon"
-                src="/assets/img/airplane.svg"
-                alt="airplane icon"
-              />
-            </div>
-          </div>
-        </section>
-        <section class="section" id="3">
-          <h2 class="section-title">POPULAR DESTINATIONS</h2>
-          <div class="box-for-imgs"><img src="" alt="" /></div>
-          <div class="box-for-imgs"><img src="" alt="" /></div>
-          <div class="box-for-imgs"><img src="" alt="" /></div>
-        </section>
-        <section class="section" id="4">
-          <h2 class="section-title">TRAVEL STORIES</h2>
-        </section>
-      </div>
+        </div>
+      </section>
+
+      <section class="section" id="3">
+        <h2 class="section-title">POPULAR DESTINATIONS</h2>
+        <div class="slider">
+          <div class="box-for-img Omsk-Russia"></div>
+          <div class="box-for-img Japan"></div>
+          <div class="box-for-img USA"></div>
+        </div>
+        <button class="button-frame2 button-text">
+          <img class="button-arrow" src="/assets/img/arrow.svg" alt="arrow" />
+          Find More
+        </button>
+      </section>
     </main>
+    <section class="section" id="4">
+      <h2 class="section-title">TRAVEL STORIES</h2>
+      <div class="container">
+        <div class="stories-block">
+          <img
+            class="stories-img"
+            src="/assets/img/Thailand.jpg"
+            alt="Thailand"
+          />
+          <div class="text-stories-block">
+            <div class="header-story">10 Photos of Attractive Thailand</div>
+            <div class="text-story">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est
+              laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+              Read More
+            </div>
+          </div>
+        </div>
+        <div class="stories-block">
+          <img class="stories-img" src="/assets/img/Utah.jpg" alt="Utah" />
+          <div class="text-stories-block">
+            <div class="header-story">Canyonlands National Park, Utah</div>
+            <div class="text-story">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est
+              laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+              Read More
+            </div>
+          </div>
+        </div>
+        <div class="stories-block">
+          <img
+            class="stories-img"
+            src="/assets/img/Mountains.jpg"
+            alt="Mountains"
+          />
+          <div class="text-stories-block">
+            <div class="header-story">I left my heart in the Mountains!</div>
+            <div class="text-story">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est
+              laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+              Read More
+            </div>
+          </div>
+        </div>
+        <div class="stories-block">
+          <img
+            class="stories-img"
+            src="/assets/img/The_Longest journey_in_my_life!.jpg"
+            alt="tljoml"
+          />
+          <div class="text-stories-block">
+            <div class="header-story">10 Photos of Attractive Thailand</div>
+            <div class="text-story">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est
+              laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+              Read More
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="button-frame2 button-text">
+        <img class="button-arrow" src="/assets/img/arrow.svg" alt="arrow" />
+        See More
+      </button>
+    </section>
+
     <footer class="footer"><div class="container"></div></footer>
   </body>
 </html>

@@ -4,6 +4,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 body {
   margin: 0;
   padding: 0;
@@ -16,34 +17,98 @@ body {
   max-width: 1440px;
   margin: 0 auto;
 }
-.main-container {
-  display: flex;
-  flex-wrap: wrap;
-}
+
 .header {
-  border: 4px solid red;
+  background: rgba(242, 120, 92, 0.7);
+  box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
+}
+
+.menu-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.logo-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.main-logo {
+  width: 30px;
+  height: 30px;
+}
+.main-logo-text {
+  font-family: "Magra";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+
+  color: #ffffff;
+}
+.nav-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.login-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+/* выборка всех кнопок в теге login-wrapper 
+.login-wrapper button {
+}*/
+.nav {
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 .nav-list {
   list-style: none;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0;
 }
 .nav-link {
   transition: 0.3s;
+  text-decoration: none;
 
   padding: 0 20px;
   line-height: 50px;
+
+  font-family: "Red Hat Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 .main {
   border: 4px solid green;
 }
 .section {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .first {
   height: 765px;
+  /* background: url(/assets/img/background1.jpg); */
+}
+.first-section-backgroun-wrapper {
   background: url(/assets/img/background1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.content-wrapper {
+  max-width: 892px;
+  max-height: 422px;
 }
 .main-section-title {
   font-family: "Aleo";
@@ -60,10 +125,10 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  /* identical to box height */
 
   color: #ffffff;
 }
+
 .main-section-title-p2 {
   font-family: "Aleo";
   font-style: italic;
@@ -74,8 +139,35 @@ body {
   color: #f2785c;
 }
 .button-frame1 {
+  width: 103px;
+  height: 41px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  background: #0d606f;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+    0px 2px 3px rgba(13, 96, 111, 0.16);
+  border-radius: 10px;
+}
+.login-button-text {
+  font-family: "Red Hat Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+
+  color: #ffffff;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 .button-frame2 {
+  width: 228px;
+  height: 59px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -101,11 +193,18 @@ body {
   order: 0;
   flex-grow: 0;
 }
+.button-arrow {
+  width: 35px;
+  height: 22.5px;
+}
 .planing-box {
   width: 892px;
   height: 95px;
-  left: 120px;
-  top: 416px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 
   background: rgba(255, 255, 255, 0.7);
   border-radius: 16px;
@@ -116,24 +215,98 @@ body {
   font-weight: 500;
   font-size: 40px;
   line-height: 53px;
-  /* identical to box height */
 
   color: #f2785c;
 }
+.steps-item-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.steps-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .box-for-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .icon-frame {
   width: 100px;
   height: 100px;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   background: #f2785c;
   border-radius: 16px;
 }
+.text-for-icons {
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #0d606f;
+}
 .icon {
   width: 52%;
 }
+.box-for-img {
+  width: 800px;
+  height: 800px;
+  border-radius: 16px;
+}
+.Omsk-Russia {
+  background: url(/assets/img/Spain.jpg);
+}
+.Japan {
+  background: url(/assets/img/Japan.jpg);
+}
+.USA {
+  background: url(/assets/img/USA.jpg);
+}
+.stories-block {
+  display: flex;
+  flex-direction: row;
+}
+.stories-img {
+  filter: drop-shadow(0px 4px 4px #0d606f);
+  border-radius: 16px;
+}
+.text-stories-block {
+}
+.header-story {
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 42px;
 
+  color: #0d606f;
+}
+.text-story {
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #0d606f;
+}
+.second-section-backgroun-wrapper {
+  background: url(/assets/img/background2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 100%;
+}
 .footer {
+  min-height: 61px;
   border: 4px solid blue;
 }
