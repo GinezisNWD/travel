@@ -6,15 +6,15 @@ html {
 }
 
 body {
-  margin: 0;
-  padding: 0;
+  max-width: 1440px;
+  margin: 0 auto;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 .container {
-  max-width: 1440px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -89,10 +89,9 @@ body {
   flex-grow: 0;
 }
 .main {
-  border: 4px solid green;
 }
 .section {
-  width: 100%;
+  max-width: 1440px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -119,7 +118,7 @@ body {
 
   color: #ffffff;
 }
-.main-section-title-p1 {
+.main-section-p1 {
   font-family: "Aleo";
   font-style: italic;
   font-weight: 700;
@@ -129,7 +128,7 @@ body {
   color: #ffffff;
 }
 
-.main-section-title-p2 {
+.main-section-p2 {
   font-family: "Aleo";
   font-style: italic;
   font-weight: 400;
@@ -221,7 +220,7 @@ body {
 .steps-item-wrapper {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .steps-item {
   display: flex;
@@ -306,7 +305,36 @@ body {
   background-size: cover;
   background-size: 100%;
 }
+.stories-section-backgroun {
+  background: rgba(255, 255, 255, 0.7);
+}
 .footer {
   min-height: 61px;
-  border: 4px solid blue;
+}
+.footer-container {
+}
+.rss-and-git {
+  display: flex;
+  align-items: center;
+}
+.github {
+  display: flex;
+  align-items: center;
+}
+.github-logo {
+  height: 3rem;
+  border-radius: 50%;
+  margin: 0.6rem;
+}
+.rss-img {
+  height: 3rem;
+}
+.footer-text {
+  font-family: "Red Hat Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+
+  color: #ffffff;
 }
