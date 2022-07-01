@@ -199,6 +199,7 @@ html {
 .button-arrow {
   width: 35px;
   height: 22.5px;
+  margin: 12.5px;
 }
 .planing-box {
   width: 892px;
@@ -222,13 +223,14 @@ html {
   color: #f2785c;
 
   margin-top: 80px;
+  margin-bottom: 40px;
 }
 .steps-item-wrapper {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
 }
 .steps-item {
+  width: 33.3%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -237,7 +239,7 @@ html {
 .box-for-icons {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 .icon-frame {
@@ -257,15 +259,26 @@ html {
   font-weight: 400;
   font-size: 20px;
 
+  margin-top: 30px;
+
   color: #0d606f;
 }
 .icon {
   width: 52%;
 }
+.slider {
+  max-width: 1440px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 .box-for-img {
   width: 800px;
   height: 800px;
   border-radius: 16px;
+  margin: 0 30px;
+  flex-shrink: 0;
 }
 .Omsk-Russia {
   background: url(assets/img/Spain.jpg);
@@ -276,15 +289,62 @@ html {
 .USA {
   background: url(assets/img/USA.jpg);
 }
+.pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  gap: 10px;
+
+  margin-top: 24px;
+  margin-bottom: 22px;
+
+  width: 80px;
+  height: 20px;
+}
+.pagination-button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.active-pg-b {
+  background: #f2785c;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.inactive-pg-b {
+  background: rgba(242, 120, 92, 0.5);
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+/* ебусь со сторьками */
 .stories-block {
   display: flex;
   flex-direction: row;
+  margin-top: 30px;
 }
 .stories-img {
   filter: drop-shadow(0px 4px 4px #0d606f);
   border-radius: 16px;
+  margin-right: 40px;
 }
 .text-stories-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .header-story {
   font-family: "Aleo";
@@ -295,6 +355,8 @@ html {
   color: #0d606f;
 }
 .text-story {
+  margin-bottom: 24px;
+
   font-family: "Aleo";
   font-style: normal;
   font-weight: 400;
@@ -315,6 +377,10 @@ html {
   min-height: 61px;
 }
 .footer-container {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .rss-and-git {
   display: flex;
@@ -329,8 +395,20 @@ html {
   border-radius: 50%;
   margin: 0.6rem;
 }
+.github-link {
+  font-family: "Red Hat Text", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #ffffff;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
 .rss-img {
   height: 3rem;
+  margin: 0 25px;
 }
 .footer-text {
   font-family: "Red Hat Text", sans-serif;
@@ -339,6 +417,18 @@ html {
   font-size: 16px;
 
   color: #ffffff;
+}
+
+.social-media-icons {
+  max-width: 140px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fav {
+  background-color: #f2785c;
+  color: black;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
